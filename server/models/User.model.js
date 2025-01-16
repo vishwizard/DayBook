@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import bcrypt from 'bcrypt';
 
-//Role Based Authentication not needed for now.
+//Role Based Authorization not needed for now.
 const userSchema = new mongoose.Schema({
     username:{
         type:String,

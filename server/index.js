@@ -29,7 +29,11 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 //importing routes
+import transactionRoutes from './routes/Transaction.routes.js';
+import userRoutes from './routes/User.routes.js';
 
+app.use('/api/transaction',transactionRoutes);
+app.use('/api/user',userRoutes);
 
 
 
